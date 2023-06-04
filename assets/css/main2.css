@@ -68,7 +68,7 @@ section {
 }
 
 .section-bg {
-  background-color: #515666e0;
+  background-color: #6b7392e0;
 }
 
 .section-header {
@@ -80,7 +80,7 @@ section {
   font-size: 32px;
   font-weight: 700;
   position: relative;
-  color: #966c79;
+  color: #c27894;
 }
 
 .section-header h2:before,
@@ -660,7 +660,7 @@ section {
 }
 
 .get-started .php-email-form button[type=submit]:hover {
-  background: #477791;
+  background: #6b7392e0;
 }
 
 @keyframes animate-loading {
@@ -678,7 +678,7 @@ section {
 --------------------------------------------------------------*/
 .constructions .card-item {
   border: 1px solid rgba(82, 86, 94, 0.2);
-  background: #b1778d;
+  background: #c27894;
   position: relative;
   border-radius: 0;
 }
@@ -1042,7 +1042,7 @@ section {
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter .stats-item {
-  background: #76c2daa1;
+  background: #ffffff;
   box-shadow: 0px 0 30px rgba(82, 86, 94, 0.05);
   padding: 30px;
 }
@@ -1058,7 +1058,7 @@ section {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .stats-counter .stats-item p {
