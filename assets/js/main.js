@@ -68,23 +68,31 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   });
 
-  /**
-   * Skills animation
-  
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
-        progress.forEach(el => {
-          el.main2.width = el.getAttribute('aria-valuenow') + '%'
-        });
-      }
-    })
+/**
+ * Skills animation
+ */
+const skillsContent = document.querySelector('.skills-content');
+
+if (skillsContent) {
+  let skillsAnimated = false;
+
+  function animateSkills() {
+    const rect = skillsContent.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    if (!skillsAnimated && rect.top < windowHeight * 0.8) {
+      const progressBars = document.querySelectorAll('.progress .progress-bar');
+      progressBars.forEach(bar => {
+        bar.style.width = bar.getAttribute('aria-valuenow') + '%';
+      });
+      skillsAnimated = true;
+    }
   }
-  */
+
+  window.addEventListener('load', animateSkills);
+  window.addEventListener('scroll', animateSkills);
+}
+  
 
   /**
    * Scroll top button
