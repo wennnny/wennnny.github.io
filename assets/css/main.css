@@ -39,6 +39,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.lang-switch a{
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.lang-switch a:hover {
+  background: rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 # Header
