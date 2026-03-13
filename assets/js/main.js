@@ -230,3 +230,17 @@ if (skillsContent) {
   });
 
 });
+
+const videos = document.querySelectorAll('.project-video');
+
+videos.forEach(video => {
+
+video.addEventListener('mouseenter', () => {
+video.play();
+});
+
+video.addEventListener('mouseleave', () => {
+video.pause();
+});
+
+});
