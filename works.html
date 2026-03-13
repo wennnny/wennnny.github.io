@@ -28,143 +28,285 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/works.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Wen-Yuh Lee<span>.</span></h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="works.html" class="active">Works</a></li>
-          <li class="lang-switch">
-            <a href="works_cn.html">中文</a>
-          </li>
+          <li class="lang-switch"><a href="works_cn.html">中文</a></li>
         </ul>
-      </nav><!-- .navbar -->
-
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
-
         <h2>Works</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
           <li>Works</li>
         </ol>
-
       </div>
-    </div><!-- End Breadcrumbs -->
+    </div>
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
+    <section class="services section-bg">
       <div class="container" data-aos="fade-up">
 
-        <div class="row gy-4">
+        <div class="works-section-title">
+          <h2>Selected Projects & Demonstrations</h2>
+          <p>
+            This page presents my representative work in autonomous maritime systems, multi-link communication architecture,
+            robotics integration, field testing, public demonstrations, and exhibition showcases.
+          </p>
+        </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-mountain-city"></i>
+        <!-- Professional Projects -->
+        <div class="works-group-title" data-aos="fade-up">
+          <h3>Professional Projects</h3>
+          <p>
+            Core technical projects focusing on system integration, autonomous vessel testing, real-time monitoring,
+            and communication architecture design.
+          </p>
+        </div>
+
+        <div class="row gy-4 mb-5">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card">
+              <img src="assets/img/works/Professional_Projects/multi-link-architecture.png" alt="Multi-link communication architecture diagram">
+              <div class="project-body">
+                <span class="project-tag">System Architecture</span>
+                <h4>Multi-link Maritime Communication Architecture</h4>
+                <p>
+                  Designed and integrated a multi-link maritime communication framework connecting ROS modules,
+                  edge devices, LTE, satellite, and monitoring stations for autonomous surface vehicle operations.
+                </p>
+                <div class="tech-stack">
+                  <span>ROS</span>
+                  <span>Python</span>
+                  <span>Networking</span>
+                  <span>System Integration</span>
+                </div>
               </div>
-              <h3>Loading...</h3>
-              <p></p>
-            <!--
-              <a href="work-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-            -->
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
-        <!--
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="project-card">
+              <img src="assets/img/works/wamv-usv.jpg" alt="WAM-V unmanned surface vehicle field test">
+              <div class="project-body">
+                <span class="project-tag">Field Testing</span>
+                <h4>WAM-V Autonomous Surface Vehicle Testing</h4>
+                <p>
+                  Conducted real-world water testing for unmanned surface vehicle platforms, validating sensing,
+                  stability, data transmission, and operational behavior in realistic maritime environments.
+                </p>
+                <div class="tech-stack">
+                  <span>USV</span>
+                  <span>Sensors</span>
+                  <span>Field Test</span>
+                  <span>Robotics</span>
+                </div>
               </div>
-              <h3></h3>
-              <p></p>
-              <a href="work-details.html" class="readmore stretched-link"><i class="bi bi-arrow-right"></i></a>
             </div>
-          </div><!-- End Service Item 
+          </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-compass-drafting"></i>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card">
+              <img src="assets/img/works/8m-usv.jpg" alt="8-meter autonomous vessel">
+              <div class="project-body">
+                <span class="project-tag">Autonomous Vessel</span>
+                <h4>8-Meter Unmanned Vessel Platform</h4>
+                <p>
+                  Participated in the integration and validation of an 8-meter autonomous vessel platform,
+                  including onboard sensing, communication linkage, and operational verification for maritime missions.
+                </p>
+                <div class="tech-stack">
+                  <span>Autonomous Vessel</span>
+                  <span>Integration</span>
+                  <span>Navigation</span>
+                  <span>Maritime AI</span>
+                </div>
               </div>
-              <h3></h3>
-              <p></p>
-              <a href="work-details.html" class="readmore stretched-link"><i class="bi bi-arrow-right"></i></a>
             </div>
-          </div><!-- End Service Item 
+          </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-trowel-bricks"></i>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="project-card">
+              <img src="assets/img/works/Demonstrations_Exhibitions/control-room.jpg" alt="Control room and monitoring station">
+              <div class="project-body">
+                <span class="project-tag">Monitoring Platform</span>
+                <h4>Real-time Monitoring & Visualization Interface</h4>
+                <p>
+                  Built and demonstrated monitoring interfaces for mission observation, data visualization,
+                  and operational awareness, connecting maritime system outputs to practical control-room workflows.
+                </p>
+                <div class="tech-stack">
+                  <span>Unity</span>
+                  <span>Visualization</span>
+                  <span>Dashboard</span>
+                  <span>Human-Machine Interface</span>
+                </div>
               </div>
-              <h3></h3>
-              <p></p>
-              <a href="work-details.html" class="readmore stretched-link"><i class="bi bi-arrow-right"></i></a>
             </div>
-          </div><!-- End Service Item 
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-helmet-safety"></i>
-              </div>
-              <h3></h3>
-              <p></p>
-              <a href="work-details.html" class="readmore stretched-link"><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item 
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-              </div>
-              <h3></h3>
-              <p></p>
-              <a href="work-details.html" class="readmore stretched-link"><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item 
+          </div>
 
         </div>
 
+        <!-- Demonstrations -->
+        <div class="works-group-title" data-aos="fade-up">
+          <h3>Demonstrations & Exhibitions</h3>
+          <p>
+            Public showcases, industry exhibitions, and collaborative presentations demonstrating the practical
+            application and visibility of the developed systems.
+          </p>
+        </div>
+
+        <div class="row gy-4 mb-5">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card">
+              <img src="assets/img/works/Demonstrations_Exhibitions/tadte-2025.png" alt="TADTE 2025 exhibition poster">
+              <div class="project-body">
+                <span class="project-tag">Defense Exhibition</span>
+                <h4>TADTE 2025 Showcase</h4>
+                <p>
+                  Participated in the Taipei Aerospace & Defense Technology Exhibition, presenting autonomous maritime
+                  solutions and industrial collaboration outcomes.
+                </p>
+                <div class="tech-stack">
+                  <span>TADTE</span>
+                  <span>Defense Tech</span>
+                  <span>Exhibition</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="project-card">
+              <img src="assets/img/works/Demonstrations_Exhibitions/computex-2024.jpg" alt="Computex 2024 demonstration">
+              <div class="project-body">
+                <span class="project-tag">Industry Demo</span>
+                <h4>COMPUTEX 2024 Demonstration</h4>
+                <p>
+                  Showcased project成果與展示內容 in an international technology exhibition environment,
+                  highlighting the intersection of AI, sensing, and maritime applications.
+                </p>
+                <div class="tech-stack">
+                  <span>COMPUTEX</span>
+                  <span>AI</span>
+                  <span>Edge Computing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card">
+              <img src="assets/img/works/Demonstrations_Exhibitions/adlinkdemo-2025.jpg" alt="ADLINK forum exhibition">
+              <div class="project-body">
+                <span class="project-tag">Forum Showcase</span>
+                <h4>ADLINK AI Forum Exhibition</h4>
+                <p>
+                  Demonstrated AI-enabled maritime system capabilities in an edge computing forum setting,
+                  including intelligent sensing and operational monitoring workflows.
+                </p>
+                <div class="tech-stack">
+                  <span>ADLINK</span>
+                  <span>AI Vision</span>
+                  <span>Edge AI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="project-card">
+              <img src="assets/img/works/team-demo-1.jpg" alt="Team project demonstration">
+              <div class="project-body">
+                <span class="project-tag">Team Presentation</span>
+                <h4>Project Demonstration & Technical Presentation</h4>
+                <p>
+                  Participated in collaborative technical demonstrations with team members, presenting system results,
+                  live interfaces, and application scenarios to reviewers and industry audiences.
+                </p>
+                <div class="tech-stack">
+                  <span>Presentation</span>
+                  <span>Teamwork</span>
+                  <span>Demo</span>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-card award-card">
+              <img src="assets/img/works/Professional_Projects/2025satelite-award.jpg" alt="Satellite innovation competition certificate">
+              <div class="project-body">
+                <span class="project-tag">Award & Recognition</span>
+                <h4>2025 Satellite Digital Application Innovation Competition</h4>
+                <p>
+                  Selected as a finalist in a national innovation competition with the project
+                  “Smart Ocean Real-Time Response Alliance (SORRA),” highlighting practical potential
+                  in satellite-enabled maritime response and intelligent monitoring.
+                </p>
+                <div class="tech-stack">
+                  <span>Award</span>
+                  <span>Satellite</span>
+                  <span>Innovation</span>
+                  <span>SORRA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="row">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="works-cta">
+              <h4>Interested in collaboration or project details?</h4>
+              <p>
+                I am interested in opportunities related to AI applications, robotics integration,
+                interactive systems, frontend/full-stack development, and interdisciplinary engineering projects.
+              </p>
+              <a href="resume.html" class="btn-get-started">View Resume</a>
+              <a href="about.html" class="btn-secondary-outline">Learn More About Me</a>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </section><!-- End Services Section -->
+    </section>
 
-  </main><!-- End #main -->
+  </main>
 
-  <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
     <div class="footer-content position-relative">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
               <h3>Wen-Yuh Lee</h3>
@@ -180,8 +322,7 @@
                 <a href="https://www.instagram.com/wen.y121/?next=%2F" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
               </div>
             </div>
-          </div><!-- End footer info column-->
-
+          </div>
         </div>
       </div>
     </div>
@@ -189,20 +330,19 @@
     <div class="footer-legal text-center position-relative">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Wen-Yuh Lee</span></strong>.2023 All Rights Reserved.
+          &copy; Copyright <strong><span>Wen-Yuh Lee</span></strong>. 2024 All Rights Reserved.
         </div>
-        <div class="credits">
-         </div>
       </div>
     </div>
 
   </footer>
-  <!-- End Footer -->
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -210,10 +350,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
