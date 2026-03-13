@@ -1,0 +1,91 @@
+/* =========================
+Works Page Styles
+========================= */
+
+.detail-sidebar,
+.detail-content-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+}
+
+.detail-sidebar h4,
+.detail-content-card h3 {
+    font-weight: 700;
+}
+
+.detail-meta {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.detail-meta li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+
+.detail-meta strong {
+    display: inline-block;
+    width: 110px;
+    color: #222;
+}
+
+.detail-highlight-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detail-highlight-list li {
+    margin-bottom: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.detail-highlight-list i {
+    color: var(--color-primary);
+    margin-top: 4px;
+}
+
+.detail-main-image {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    object-fit: cover;
+    max-height: 420px;
+}
+
+.detail-section-title {
+    font-size: 22px;
+    margin-top: 28px;
+    margin-bottom: 14px;
+    color: #222;
+    font-weight: 700;
+}
+
+.detail-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.detail-tags span {
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: #f4f6f8;
+    font-size: 13px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.detail-back-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: var(--color-primary);
+    font-weight: 600;
+}
